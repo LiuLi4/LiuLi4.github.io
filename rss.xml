@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LiuLi4 Blog</title>
+    <link>https://liuli4.github.io/blog/</link>
+    <description>AI Native 开发、Agent 技术选型、微信小程序实践和个人网站建设。</description>
+    <language>zh-CN</language>
+    <atom:link href="https://liuli4.github.io/rss.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

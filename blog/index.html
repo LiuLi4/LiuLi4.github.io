@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>博客 | LiuLi4</title>
+    <meta name="description" content="关于 AI Native 开发、Agent 技术选型、微信小程序实践、个人网站建设和独立产品复盘的技术博客。">
+    <link rel="canonical" href="https://liuli4.github.io/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="博客 | LiuLi4">
+    <meta property="og:description" content="AI Native 开发、Agent 技术选型、微信小程序实践和个人网站建设。">
+    <meta property="og:image" content="https://liuli4.github.io/assets/metric-monster.png">
+    <link rel="stylesheet" href="/styles.css">
+    <script>document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");</script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Blog","name":"博客 | LiuLi4","url":"https://liuli4.github.io/blog/","inLanguage":"zh-CN"}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="/"><span class="brand-mark">L4</span><span>LiuLi4</span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="/projects/">作品</a>
+        <a href="/blog/">博客</a>
+        <a href="/about/">关于</a>
+        <button class="theme-toggle" type="button" aria-label="切换明暗主题" data-theme-toggle>◐</button>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <p class="eyebrow">Writing roadmap</p>
+        <h1>先写能证明判断的文章。</h1>
+        <p>第一版博客不伪造已发布文章，先公开写作路线。真正发布后，每篇文章会补齐标题、摘要、标签、发布时间、结构化数据和 RSS item。</p>
+        <div class="tags" aria-label="筛选写作主题">
+          <button class="tag" type="button" data-filter="all">全部</button>
+          <button class="tag" type="button" data-filter="ai-native">AI Native</button>
+          <button class="tag" type="button" data-filter="product">产品复盘</button>
+          <button class="tag" type="button" data-filter="site">建站 SEO</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="post-list">
+          <div class="post-row" data-topic="product"><span>01</span><strong>指标怪兽从想法到上线：一个 AI Native 小程序的完整过程</strong><em>产品复盘</em></div>
+          <div class="post-row" data-topic="ai-native"><span>02</span><strong>完全 AI Native 开发是什么：我如何让 Agent 参与需求、选型和实现</strong><em>AI Native</em></div>
+          <div class="post-row" data-topic="ai-native"><span>03</span><strong>Agent 如何完成技术选型：指标怪兽的开发方式复盘</strong><em>AI Native</em></div>
+          <div class="post-row" data-topic="site"><span>04</span><strong>用 GitHub Pages 搭个人网站：独立开发者的低运维方案</strong><em>建站 SEO</em></div>
+          <div class="post-row" data-topic="site"><span>05</span><strong>个人网站的 SEO 基础：title、description、canonical、sitemap、RSS</strong><em>建站 SEO</em></div>
+          <div class="post-row" data-topic="product"><span>06</span><strong>如何给项目页写内容：从功能列表到问题、取舍、结果</strong><em>产品复盘</em></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>© LiuLi4. Built for GitHub Pages.</p>
+      <div><a href="/rss.xml">RSS</a><a href="/sitemap.xml">Sitemap</a><a href="https://github.com/LiuLi4">GitHub</a></div>
+    </footer>
+    <script src="/site.js" defer></script>
+  </body>
+</html>

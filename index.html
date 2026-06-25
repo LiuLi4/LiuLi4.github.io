@@ -1,60 +1,164 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LiuLi4</title>
-    <meta name="description" content="LiuLi4 personal website">
-    <style>
-      :root {
-        color-scheme: light dark;
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.5;
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>LiuLi4 | AI Native 全栈独立开发者</title>
+    <meta name="description" content="LiuLi4 的个人网站。记录 AI Native 全栈开发、独立产品实践和已上线作品「指标怪兽 / Metric Monster」。">
+    <link rel="canonical" href="https://liuli4.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LiuLi4 | AI Native 全栈独立开发者">
+    <meta property="og:description" content="AI Native 全栈独立开发者，正在把数据、AI 和产品判断做成可上线的实用工具。">
+    <meta property="og:url" content="https://liuli4.github.io/">
+    <meta property="og:image" content="https://liuli4.github.io/assets/metric-monster.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="alternate" type="application/rss+xml" title="LiuLi4 RSS" href="/rss.xml">
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (prefersDark ? "dark" : "light");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "LiuLi4",
+        "url": "https://liuli4.github.io/",
+        "sameAs": ["https://github.com/LiuLi4"],
+        "jobTitle": "AI Native Full-stack Developer",
+        "knowsAbout": ["AI Native development", "Agent-led development", "Full-stack development", "WeChat Mini Programs"]
       }
-
-      body {
-        display: grid;
-        min-height: 100vh;
-        margin: 0;
-        place-items: center;
-        background: #f7f7f4;
-        color: #1d1d1f;
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "LiuLi4",
+        "url": "https://liuli4.github.io/",
+        "inLanguage": ["zh-CN", "en"]
       }
-
-      main {
-        width: min(680px, calc(100% - 48px));
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: clamp(2rem, 6vw, 4rem);
-        font-weight: 700;
-      }
-
-      p {
-        max-width: 36rem;
-        margin: 0;
-        color: #565a5f;
-        font-size: 1.125rem;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #111214;
-          color: #f4f4f0;
-        }
-
-        p {
-          color: #b7bbc0;
-        }
-      }
-    </style>
+    </script>
   </head>
   <body>
-    <main>
-      <h1>LiuLi4</h1>
-      <p>Personal website hosted on GitHub Pages.</p>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="LiuLi4 首页">
+        <span class="brand-mark">L4</span>
+        <span>LiuLi4</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="/projects/">作品</a>
+        <a href="/blog/">博客</a>
+        <a href="/about/">关于</a>
+        <a href="https://github.com/LiuLi4">GitHub</a>
+        <button class="theme-toggle" type="button" aria-label="切换明暗主题" data-theme-toggle>◐</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AI Native Full-stack Developer</p>
+          <h1>把数据、AI 和产品判断，做成可上线的实用工具。</h1>
+          <p class="hero-lede">
+            我是 LiuLi4，一个 AI Native 全栈独立开发者。这里展示我的程序作品、构建记录和技术写作，当前代表作品是微信小程序「指标怪兽 / Metric Monster」。
+          </p>
+          <p class="hero-lede en">
+            I build practical, personality-driven tools with agents, data, and product thinking.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="/projects/metric-monster/">查看指标怪兽</a>
+            <a class="button" href="/blog/">阅读构建记录</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="指标怪兽概览">
+          <div class="signal-card">
+            <div>
+              <p class="card-kicker">Featured project</p>
+              <h2>指标怪兽</h2>
+              <p>面向 A 股、港股、ETF 的技术指标分析微信小程序。</p>
+            </div>
+            <span class="status live">已上线</span>
+          </div>
+          <img class="product-shot" src="/assets/metric-monster.png" width="720" height="540" alt="指标怪兽微信小程序界面截图">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Core narrative</p>
+          <h2>不是简历站，是一个可搜索的作品入口。</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="feature-index">01</span>
+            <h3>AI Native 构建</h3>
+            <p>让 Agent 参与需求拆解、技术选型、实现路径和迭代，同时保留人工判断与上线校验。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">02</span>
+            <h3>已上线作品</h3>
+            <p>「指标怪兽」作为第一代表项目，展示从问题、功能、解释性到风险提示的完整产品叙事。</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">03</span>
+            <h3>技术写作</h3>
+            <p>围绕 Agent 技术选型、微信小程序实践、GitHub Pages 建站和个人产品复盘沉淀内容。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div>
+          <p class="eyebrow">Project</p>
+          <h2>Metric Monster</h2>
+          <p>
+            一个围绕技术指标、评分趋势和数据判断的微信小程序。页面会明确说明：数据基于公开行情与量化规则，不构成投资建议。
+          </p>
+        </div>
+        <div class="metric-list">
+          <div><strong>0-100</strong><span>综合技术评分</span></div>
+          <div><strong>5</strong><span>维归因解释</span></div>
+          <div><strong>20日</strong><span>走势观察</span></div>
+          <div><strong>Agent</strong><span>完成技术选型</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Writing roadmap</p>
+          <h2>首批写作方向</h2>
+        </div>
+        <div class="post-list">
+          <a href="/blog/" class="post-row">
+            <span>01</span>
+            <strong>指标怪兽从想法到上线：一个 AI Native 小程序的完整过程</strong>
+            <em>项目复盘</em>
+          </a>
+          <a href="/blog/" class="post-row">
+            <span>02</span>
+            <strong>Agent 如何完成技术选型：指标怪兽的开发方式复盘</strong>
+            <em>AI Native</em>
+          </a>
+          <a href="/blog/" class="post-row">
+            <span>03</span>
+            <strong>用 GitHub Pages 搭个人网站：独立开发者的低运维方案</strong>
+            <em>建站</em>
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© LiuLi4. Built for GitHub Pages.</p>
+      <div>
+        <a href="/rss.xml">RSS</a>
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="https://github.com/LiuLi4">GitHub</a>
+      </div>
+    </footer>
+    <script src="/site.js" defer></script>
   </body>
 </html>
