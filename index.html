@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiuLi4</title>
+    <meta name="description" content="LiuLi4 personal website">
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        place-items: center;
+        background: #f7f7f4;
+        color: #1d1d1f;
+      }
+
+      main {
+        width: min(680px, calc(100% - 48px));
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 4rem);
+        font-weight: 700;
+      }
+
+      p {
+        max-width: 36rem;
+        margin: 0;
+        color: #565a5f;
+        font-size: 1.125rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #111214;
+          color: #f4f4f0;
+        }
+
+        p {
+          color: #b7bbc0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>LiuLi4</h1>
+      <p>Personal website hosted on GitHub Pages.</p>
+    </main>
+  </body>
+</html>
